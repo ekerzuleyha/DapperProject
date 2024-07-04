@@ -2,6 +2,7 @@
 
 using DapperProject.Context;
 using DapperProject.Services.CategoryServices;
+using DapperProject.Services.ProductServices;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,6 +12,7 @@ builder.Services.AddScoped<DapperContext>();
 
 
 builder.Services.AddScoped<ICategoryService, CategoryService>();
+builder.Services.AddScoped<IProductService, ProductService>();
 
 
 
